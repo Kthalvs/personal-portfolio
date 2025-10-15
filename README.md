@@ -98,9 +98,9 @@ npm run deploy
 You can access the live version of your portfolio once it's deployed:
 
 **GitHub Pages URL:**  
-https://your-username.github.io/personal-portfolio
+https://kthalvs.github.io/personal-portfolio/
 
 **Demo Recording:**  
-Your Demo link here
+https://drive.google.com/drive/folders/1x_o0d9sA0UQY64qVBI1FPN_iJPz7Qj8E?usp=sharing
 
 ---
