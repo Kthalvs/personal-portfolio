@@ -11,9 +11,11 @@
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
@@ -39,4 +41,402 @@
 
 .read-the-docs {
   color: #888;
+}
+
+/* ======== General Layout ======== */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff5f8;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+/* ======== Header ======== */
+#header {
+  background-color: #1a060c;
+  color: #333;
+  padding: 30px 0;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(255, 182, 193, 0.2);
+}
+#logo h1 {
+  color: #d63384;
+  font-size: 1.4em;
+  margin-bottom: 5px;
+}
+#logo p {
+  color: #555;
+  font-style: italic;
+}
+
+/* ======== Section Layout ======== */
+section {
+  padding: 80px 20px;
+  text-align: center;
+}
+section h2 {
+  color: #d63384;
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+/* ======== Buttons ======== */
+.button {
+  background-color: #d63384;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 25px;
+  font-size: 1em;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+.button:hover {
+  background-color: #ff85a2;
+}
+
+/* ======== Projects Section ======== */
+#projects .item {
+  background-color: #ffe4ec;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(214, 51, 132, 0.15);
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+#projects .item:hover {
+  transform: translateY(-5px);
+}
+.image.fit img {
+  border-radius: 12px 12px 0 0;
+  width: 100%;
+}
+
+/* ======== Footer ======== */
+#footer {
+  background-color: #ffe4ec;
+  color: #555;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9em;
+  box-shadow: 0 -2px 10px rgba(255, 182, 193, 0.2);
+}
+
+/* ======== Navigation Icons Hover ======== */
+#nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+}
+#nav ul li a:hover {
+  background-color: #d63384;
+  color: #fff5f8;
+  box-shadow: 0 0 10px rgba(214, 51, 132, 0.6);
+  transform: scale(1.1);
+}
+
+/* ======== Contact Section - Social Icons ======== */
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px; /* spacing between icons */
+  list-style: none;
+  padding: 0;
+  margin-top: 30px;
+}
+.icons li {
+  display: inline-block;
+}
+.icons a {
+  font-size: 2.5rem; /* make icons bigger */
+  color: #d63384; /* main purple-pink color */
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+.icons a:hover {
+  color: #ff85a2; /* lighter hover color */
+  transform: scale(1.2); /* slight zoom when hovered */
+  text-shadow: 0 0 10px rgba(214, 51, 132, 0.5);
+}
+
+#top {
+  background-color: #fff5f8 !important;
+  width: 100%;
+  text-align: center;
+  padding: 80px 0;
+  border-radius: 0;
+}
+
+/* ======== Fix Intro Text Color (Exclude Button) ======== */
+#top,
+#top h2,
+#top p,
+#top strong,
+#top footer {
+  color: #333 !important; /* make text dark like Biography */
+  background-color: #fff5f8 !important; /* keep pink background */
+}
+
+/* Keep name/pink highlights */
+#top strong {
+  color: #d63384 !important;
+}
+
+#biography {
+  background-color: #fff5f8 !important;
+  width: 100%;
+  text-align: center;
+  padding: 80px 0;
+  border-radius: 0;
+}
+
+#projects {
+  background-color: #fff5f8 !important;
+  width: 100%;
+  text-align: center;
+  padding: 80px 0;
+  border-radius: 0;
+}
+
+#skills {
+  background-color: #fff5f8 !important;
+  width: 100%;
+  text-align: center;
+  padding: 80px 0;
+  border-radius: 0;
+}
+
+/* ======== Enhanced Header Profile Picture ======== */
+#header {
+  background: linear-gradient(135deg, #0a0014 0%, #1a0a2e 100%);
+  color: #fff;
+  padding: 40px 0;
+  text-align: center;
+  box-shadow: 0 2px 20px rgba(214, 51, 132, 0.3);
+}
+
+#logo {
+  position: relative;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Profile Picture Circle */
+#logo .image.avatar48 {
+  position: relative;
+  display: inline-block;
+  width: 180px;
+  height: 180px;
+  margin-bottom: 20px;
+  background: linear-gradient(135deg, #f8f8f8 0%, #e8e8e8 100%);
+  border-radius: 50%;
+  border: 4px solid #ff1493;
+  box-shadow: 0 0 40px rgba(255, 20, 147, 0.6), 
+              0 0 80px rgba(255, 20, 147, 0.3);
+  /* Center the text */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+  font-weight: 300;
+  color: #999;
+  letter-spacing: 3px;
+  font-family: 'Georgia', serif;
+}
+
+/* Glow Effect Behind */
+#logo .image.avatar48::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 20, 147, 0.4) 0%, transparent 70%);
+  filter: blur(20px);
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* Name Styling */
+#logo h1#title {
+  color: #ff1493;
+  font-size: 2em;
+  margin: 15px 0 10px 0;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  text-shadow: 0 0 20px rgba(255, 20, 147, 0.3);
+}
+
+/* Subtitle/Course Info */
+#logo p {
+  color: rgba(255, 255, 255, 0.7) !important;
+  font-style: normal !important;
+  font-size: 1em;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  margin-top: 5px;
+}
+
+/* Divider line */
+#logo::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #ff1493, transparent);
+  margin: 20px auto 0;
+  border-radius: 2px;
+}
+
+/* Make the profile picture bigger */
+#logo .image.avatar48 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Burger Icon Wrapper */
+.menu-button-wrapper {
+  display: none; /* Hide by default on large screens */
+  /* We removed the high z-index here and moved it to the media query */
+}
+
+/* Top Right Resume Button */
+.top-right-resume-btn {
+  display: none; /* Hide by default on large screens */
+}
+
+/* ======================================= */
+/* ====== BURGER MENU & MOBILE STYLES ====== */
+/* ======================================= */
+@media screen and (max-width: 980px) {
+  
+  /* FIX: Prevent body content from scrolling horizontally when menu is open */
+  body.is-menu-visible {
+    overflow-x: hidden;
+  }
+  
+  /* Set transition for elements that will be shifted */
+  #main,
+  #footer,
+  .menu-button-wrapper,
+  .top-right-resume-btn {
+    transition: transform 0.3s ease;
+  }
+  
+  /* SHIFT FIX: Move the main content and footer to the right */
+  body.is-menu-visible #main,
+  body.is-menu-visible #footer {
+    /* Use a negative margin to offset the shift from the body, preventing the jump */
+    margin-left: 250px; 
+    transform: translateX(0); /* Resetting the transform on main */
+  }
+  
+  /* Move the fixed elements (burger/resume button) to the right so they stay relative to the main content */
+  body.is-menu-visible .menu-button-wrapper,
+  body.is-menu-visible .top-right-resume-btn {
+    transform: translateX(250px);
+  }
+  
+  /* 1. Sidebar/Header Positioning for Mobile */
+  #header {
+    /* Set the sidebar to be a fixed element on the left */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px; 
+    height: 100vh;
+    z-index: 1000;
+    /* Move it off-screen to the left by default */
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    padding: 0; /* Remove top/bottom padding to fill the screen */
+  }
+  
+  /* When body has the class, slide the sidebar into view */
+  body.is-menu-visible #header {
+    transform: translateX(0);
+    box-shadow: 2px 0 15px rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Ensure logo and nav inside header fit the mobile sidebar */
+  #header .top {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  /* 2. Style and position the Burger Icon (Top Left) */
+  .menu-button-wrapper {
+    display: block;
+    position: fixed; /* Ensures it stays fixed relative to the viewport, not the content */
+    top: 20px;
+    left: 20px;
+    /* THE CRITICAL FIX: Ensure z-index is applied here in the active block */
+    background-color: #fff5f8;
+    padding: 0px;
+    border-radius: 0px;
+    box-shadow: none;
+    z-index: 9999; 
+  }
+  
+  .top-menu-icon {
+    /* Make the burger icon visible and fixed */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background-color: rgba(214, 51, 132, 0.9); /* Pink/Burger color */
+    padding: 8px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+  }
+
+  /* Style the three lines of the burger icon */
+  .top-menu-icon .line {
+    width: 80%;
+    height: 3px;
+    background-color: white;
+    border-radius: 1px;
+    transition: all 0.3s ease;
+  }
+
+  /* Transform to an 'X' when open */
+  body.is-menu-visible .top-menu-icon {
+    background-color: #ff85a2; /* Different color when open */
+  }
+  body.is-menu-visible .top-menu-icon .line:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+  }
+  body.is-menu-visible .top-menu-icon .line:nth-child(2) {
+    opacity: 0;
+  }
+  body.is-menu-visible .top-menu-icon .line:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+  }
+  
+  /* Hides the "View My Projects" button in the #top (Intro) section */
+  #top footer .button {
+      display: none;
+  }
+  
+  /* Hides the "View My Resume" button in the #resume section */
+  #resume .container .button {
+      display: inline-block;
+  }
 }
